@@ -29,10 +29,11 @@ def main():
                 if event.type == pygame.MOUSEBUTTONDOWN:
                     x, y = event.pos
             
-            screen.fill([rColor, gColor, bColor])
-
             color = "black"
             defaultColor = "light green"
+
+            #screen.fill([rColor, gColor, bColor])
+            screen.fill(defaultColor)
 
             for x1 in range(32, 640, 32):
                 pygame.draw.line(screen, color, (x1,0), (x1,512))
